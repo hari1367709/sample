@@ -15,6 +15,10 @@
             <SizeBasedTriggeringPolicy size="10 MB"/>
             <DefaultRolloverStrategy max="10"/>
         </RollingFile>
+    
+        <MuleOpenTelemetry name="OpenTelemetryAppender">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </MuleOpenTelemetry>
     </Appenders>
 
     <Loggers>
